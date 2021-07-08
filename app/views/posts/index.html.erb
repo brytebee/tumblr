@@ -4,7 +4,7 @@
             <%= link_to post.title, post %>
         </h2>
         <p class="date">
-            <%= truncate(post.body, length:50) %> 
+            <%# <%= truncate(post.body, length:50) %> 
             <%= time_ago_in_words( post.updated_at ) %>
         </p>
     </div>
