@@ -4,7 +4,7 @@
     </h1>
 
     <p class="date">
-            <span class="date-created">
+        <span class="date-created">
             Submitted <%= time_ago_in_words(@post.created_at) %>
         </span>
 
@@ -16,4 +16,11 @@
     <p class="body">
         <%= @post.body %>
     </p>
+    
+    <div id="comments">
+        <h2> <%= @post.comments.count %> Comments</h2>
+        <%= render @post.comments %>
+        <h3> Join the discussion: </h3>
+        <%= render "comments/form" %>
+    </div>
 </div>

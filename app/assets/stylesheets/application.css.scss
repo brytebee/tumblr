@@ -12,11 +12,11 @@
  *
  *= require_tree .
  *= require_self
- */
+*/
 
- @import 'normalize';
+@import 'normalize';
 
- html, body {
+html, body {
 	font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -30,7 +30,7 @@ a {
 }
 
 #sidebar {
-	width: 200px;
+	width: 250px;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -45,7 +45,7 @@ a {
 		padding-right: 3em;
 		.category {
 			font-weight: 900;
-			font-size: 2.5em;
+			font-size: 2.1em;
 			text-transform: uppercase;
 			color: #22747b;
 		}
@@ -79,7 +79,7 @@ a {
 	outline: none;
 	background: transparent;
 	border: 1.5px solid #FFF;
-	padding: .5em 2.5em;
+	padding: .5em 1.5em;
 	border-radius: 0.5em;
 	&:hover {
 		border: 1px solid #333734;
@@ -99,9 +99,9 @@ a {
 }
 
 #main_content {
-	margin-left: 200px;
+	margin-left: 250px;
 	#header {
-		padding: 1.2em 3.5em;
+		padding: 1.2em 3.75em;
 		border-bottom: 1px solid #b8e2fe;
 		background: #529FCD;
 		color: #FFF;
@@ -122,7 +122,7 @@ a {
 		}
 	}
 	.post_wrapper {
-		padding: 1.9em;
+		padding: 1.9em 3.75em;
 		border-bottom: 1px solid #d6dce0;
 		.title {
 			margin: 2px;
@@ -146,7 +146,7 @@ a {
 		}
 	}
 	#post_content {
-		padding: 1em 3em;
+		padding: 1em 3.75em;
 		.title {
 			font-weight: 500;
 			text-decoration: none;
@@ -164,7 +164,7 @@ a {
 		}
 		#comments {
 			h2 {
-				margin: 3em 0 1em 0;
+				margin: 3em 0 0 0;
 				border-bottom: 1px solid #d6dce0;
 				padding-bottom: 0.5em;
 			}
@@ -192,8 +192,8 @@ a {
 						margin: 0.2em 0 0 0;
 					}
 					.comment_time {
-						margin-top: 1.2em;
-						font-size: .8em;
+						margin-top: 1em;
+						font-size: .6em;
 					}
 				}
 				.button {
@@ -206,7 +206,7 @@ a {
 		}
 	}
 	#page_wrapper {
-		padding: 3em;
+		padding: 3em 3.75em;
 		#profile_image {
 			width: 300px;
 			float: left;
