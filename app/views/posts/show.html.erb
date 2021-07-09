@@ -10,7 +10,12 @@
 
         <span class="date-updated">
             Updated <%= time_ago_in_words(@post.updated_at) %>
-        </span> | <%= link_to "Edit", edit_post_path(@post), class: "button" %> | <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: 'Are you sure?' }, class: "button" %>
+        </span> 
+        
+        <% if user_signed_in? %> 
+            <%= link_to "Edit", edit_post_path(@post), class: "button" %> | 
+            <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: 'Are you sure?' }, class: "button" %> 
+        <% end %>
     </p>
 
     <p class="body">
